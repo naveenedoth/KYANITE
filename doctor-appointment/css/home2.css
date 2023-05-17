@@ -1,0 +1,169 @@
+*{
+	padding: 0%;
+	margin: auto;
+	box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    padding-top: 2%;
+	background: linear-gradient(#141e30,#243b55);
+}
+
+nav{
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-size: 105%;
+    justify-content: space-evenly;
+}
+
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+	box-sizing: border-box;
+}
+
+nav a.logo img{
+    width: 160px;
+    height: 40px;
+}
+nav a.link , nav a.btn{
+    padding-left: 2%;
+}
+
+nav a.link::after{
+	content: '';
+    height: 3px;
+    width: 0%;
+    background: #03e9f4;
+    position: absolute;
+    left: 8%;
+    bottom: -10%;
+    transition: 0.5s;
+}
+
+nav a.link:hover::after{
+    width: 100%;
+}
+
+nav a.btn{
+    background-color: #00cc5c;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 30px;
+    transition: transform .4s;
+    height: fit-content;
+}
+
+nav a.btn:hover{
+	transform: scale(1.2);
+
+}
+hr{
+    width: 100%;
+}
+
+.content{
+	position: absolute;
+	top: 50%;
+	left:8%;
+	transform: translateY(-50%);
+}
+h1{
+	color: white;
+	margin: 20px 0px 20px;
+	font-size: 75px;
+}
+h3{
+	color: white;
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+h4{
+	color: #fcfc;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+h5{
+	color: #A39191;
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #03e9f4;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span
+{
+    background: #03e9f4;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover
+{
+    border: none;
+	color: #0B111B;
+}
+.book{
+	position: absolute;
+	top: 80%;
+	left:8%;
+	transform: translateY(-50%);
+}
+.dude .img{
+     padding-left: 55%;
+	 padding-top: 3%;
+}
+.logo img{
+	width: 120%;
+	padding-top: 0%;
+	padding-left: 0%;
+}
+
+section 
+{
+width: 100%;
+margin: 80px ;
+}
+
+.footer
+{
+width: 100%;
+min-height: 100px;
+padding: 20px 0px;
+margin: 0;
+background: rgb(117, 189, 215);
+text-align: center;
+}
+.footer p
+{
+color: rgb(255, 255, 255);
+margin: 20px auto;
+padding: 20px auto;
+font-size: 100%;
+}

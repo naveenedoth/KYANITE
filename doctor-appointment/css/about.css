@@ -1,0 +1,125 @@
+*{
+	padding: 0%;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+body{
+    padding-top: 2%;
+    background: #243b55;
+}
+
+nav{
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-size: 105%;
+    justify-content: space-evenly;
+}
+
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+	box-sizing: border-box;
+}
+
+nav a.logo img{
+    width: 160px;
+    height: 40px;
+}
+nav a.link , nav a.btn{
+    padding-left: 2%;
+}
+
+nav a.link::after{
+	content: '';
+    height: 3px;
+    width: 0%;
+    background: #03e9f4;
+    position: absolute;
+    left: 8%;
+    bottom: -10%;
+    transition: 0.5s;
+}
+
+nav a.link:hover::after{
+    width: 100%;
+}
+
+nav a.btn{
+    background-color: #00cc5c;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 30px;
+    transition: transform .4s;
+    height: fit-content;
+}
+
+nav a.btn:hover{
+	transform: scale(1.2);
+
+}
+hr{
+    width: 100%;
+}
+.box {
+    
+  width: 100%;
+  padding: 30px;
+  background: rgb(117, 189, 215);
+  box-sizing: border-box;
+  border-radius: 0px;
+  height: 100%;
+  font-size: 30px;
+}
+
+.box h1 {
+  color:#fff;
+  text-align: center;
+}
+
+.info{
+  color:#fff;
+  padding: 2% 5%;
+  padding-bottom: 6%;
+  background-color: #243b55;
+}
+.info h2{
+  color: rgb(138, 135, 135);
+  padding: 50px;
+  font-size: 40px;
+}
+
+.info p{
+  font-size: 20px;;
+}
+
+
+section 
+{
+width: 100%;
+margin: 80px ;
+}
+
+.footer
+{
+width: 100%;
+min-height: 100px;
+padding: 20px 0px;
+margin: 0;
+background: rgb(117, 189, 215);
+text-align: center;
+}
+.footer p
+{
+color: rgb(255, 255, 255);
+margin: 20px auto;
+padding: 20px auto;
+}
+
+.all{
+align-items: flex-start;
+}

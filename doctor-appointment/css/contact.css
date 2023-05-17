@@ -1,0 +1,262 @@
+html {
+    height: 100%;
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+  }
+  nav{
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-size: 105%;
+    justify-content: space-evenly;
+}
+
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+	box-sizing: border-box;
+}
+
+nav a.logo img{
+    width: 160px;
+    height: 40px;
+}
+nav a.link , nav a.btn{
+    padding-left: 2%;
+}
+
+nav a.link::after{
+	content: '';
+    height: 3px;
+    width: 0%;
+    background: #03e9f4;
+    position: absolute;
+    left: 8%;
+    bottom: -10%;
+    transition: 0.5s;
+}
+
+nav a.link:hover::after{
+    width: 100%;
+}
+
+nav a.btn{
+    background-color: #00cc5c;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 30px;
+    transition: transform .4s;
+    height: fit-content;
+}
+
+nav a.btn:hover{
+	transform: scale(1.2);
+
+}
+
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  
+  /* Style the container/contact section */
+  .container {
+    position: relative;
+    margin-top: 440px;
+    margin-bottom: 10px;
+    left: 50%;
+    width: 600px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .container h2{
+    color: #fff;
+  }
+  
+  .container p{
+    color: #fff;
+  }
+
+  .row .column label{
+    color: #fff;
+  }
+
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  .column  a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .column  a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+  .column  a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .column  a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 2s linear infinite;
+  }
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .column  a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 2s linear infinite;
+    animation-delay: .50s;
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .column  a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 2s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .column  a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 2s linear infinite;
+    animation-delay: 1.5s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+
+
+
+
+section 
+{
+	width: 100%;
+	margin: 80px ;
+}
+.footer
+{
+	width: 100%;
+	min-height: 100px;
+	padding: 20px 0px;
+	margin: -50px;
+	background: rgb(49, 117, 142);
+	text-align: center;
+    border-radius: 10px;
+}
+.footer p
+{
+	color: rgb(255, 255, 255);
+	margin: 20px auto;
+	padding: 20px auto;
+}
